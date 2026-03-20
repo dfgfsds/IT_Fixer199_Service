@@ -14,25 +14,17 @@ const _inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const _spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' })
 
 export const metadata: Metadata = {
-  title: 'ServeNow - Book Trusted Services Near You',
-  description: 'Premium service booking platform. Verified professionals. Instant booking. Transparent pricing.',
-  generator: 'v0.app',
+  title: 'ITFixer@199',
+  // description: 'Premium service booking platform. Verified professionals. Instant booking. Transparent pricing.',
+  // generator: 'v0.app',
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
       {
         url: '/favicon.ico',
         type: 'image/x-icon',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/favicon.ico',
   },
 }
 
