@@ -346,6 +346,8 @@ import LocationModal from "./Address/LocationModal"
 import { useCartItem } from "@/context/CartItemContext"
 
 
+import Image from "next/image"
+
 export function Header() {
   const { isLoggedIn, setShowLoginModal, logout, user } = useAuth()
   const { totalItems } = useCart()
@@ -387,12 +389,18 @@ export function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="h-8 w-8 bg-primary rounded text-white flex items-center justify-center font-bold">
-              S
+            <div className="flex items-center justify-center overflow-hidden">
+              <Image
+                src="/images/logo.jpeg"
+                alt="ServeNow Logo"
+                width={40}
+                height={40}
+                className="w-full h-[60px] object-contain"
+              />
             </div>
-            <span className="font-bold text-lg hidden sm:block">
+            {/* <span className="font-bold text-lg hidden sm:block">
               ServeNow
-            </span>
+            </span> */}
           </Link>
 
           {/* 🔥 LOCATION BUTTON */}
